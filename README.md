@@ -1,6 +1,6 @@
 # TranslatorApp
 
-A lightweight WPF desktop application that translates between **Persian**, **Arabic**, and **English** using a local Python Flask API with HuggingFace Transformers (Facebook M2M100 or Helsinki-NLP models).
+A lightweight WPF desktop application that translates between **All Languages** using a local Python Flask API with HuggingFace Transformer (Facebook M2M100 model).
 
 ---
 
@@ -12,7 +12,7 @@ TranslatorApp/
 ├── WpfApp/                  # WPF .NET Desktop UI (C#)
 ├── backend/                 # Python Flask API + Model
 │   ├── translate_api.py
-│   ├── requirements.txt
+│   ├── download_model.py
 │   └── model/ (ignored in Git)
 ├── .gitignore
 └── README.md
