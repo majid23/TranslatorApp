@@ -73,6 +73,11 @@ namespace LLMTranslator
 
         private async void Translate_Click(object sender, RoutedEventArgs e)
         {
+            targetLang = TargetLangBox.Text;
+            sourceLang = SourceLangBox.Text;
+            SaveLangSettings();
+            UpdateTextAlignments();
+
             var input = InputTextBox.Text.Trim();
             if (string.IsNullOrWhiteSpace(input)) return;
 
@@ -114,15 +119,15 @@ namespace LLMTranslator
 
         private void SourceLang_Changed(object sender, RoutedEventArgs e)
         {
-            sourceLang = SourceLangBox.Text;
-            SaveLangSettings();
+            //sourceLang = SourceLangBox.Text;
+            //SaveLangSettings();
             UpdateTextAlignments();
         }
 
         private void TargetLang_Changed(object sender, RoutedEventArgs e)
         {
-            targetLang = TargetLangBox.Text;
-            SaveLangSettings();
+            //targetLang = TargetLangBox.Text;
+            //SaveLangSettings();
             UpdateTextAlignments();
         }
 
