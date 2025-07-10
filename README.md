@@ -1,5 +1,7 @@
 # TranslatorApp
 
+![Translator App Screenshot](assets/screenshot.png)
+
 A lightweight WPF desktop application that translates between **All Languages** using a local Python Flask API with HuggingFace Transformer (Facebook M2M100 model).
 
 ---
